@@ -689,10 +689,14 @@
                     <img src="../../../asstes/Backend/html/assets/img/avatars/andy.jpg" alt="Fabian Mellan Jr." />
                 </div>
                 <div class="footer-user">
-                    <a href="Profile.html">Fabian Mellan Jr.</a>
+                
+                    <a href="" th:text="${userName}"></a>
+                    
+                    <span th:each="rol : ${ userName1 }" th:text="${rol.role}"></span>
+       					
                 </div>
                 <div class="footer-links">
-                    <a href="Login.html" class="links-logout">
+                    <a href="/logout" class="links-logout">
                         <i class="pe-7s-power"></i>
                         <span>Sign Out</span>
                     </a>
