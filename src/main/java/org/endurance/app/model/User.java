@@ -101,5 +101,10 @@ public class User implements Serializable {
 	public void setRoles(HashSet<Role> hashSet) {
 		this.roles = (List<Role>) hashSet;
 	}
+	
+	public String mama() {
+		 String a ="abc";
+		 return a;
+	}
 
 }
